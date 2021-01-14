@@ -6,13 +6,13 @@ Since the input to the model is the text of the tweet, hence concepts of Natural
 
 The following preprocessing steps have been used: 
         
-        •	• Removal of URLs 
-        •	• Removal of tags 
-        •	• Removal of Emojis 
-        •	• Replacement of common abbreviations with full words of same exact meaning 
-        •	• Removal of punctuations, numbers and extra spaces 
-        •	• Removal of single character words (like a, I, etc.) 
-        •	• Converting all the words to lower alphabets 
+        • Removal of URLs 
+        • Removal of tags 
+        • Removal of Emojis 
+        • Replacement of common abbreviations with full words of same exact meaning 
+        • Removal of punctuations, numbers and extra spaces 
+        • Removal of single character words (like a, I, etc.) 
+        • Converting all the words to lower alphabets 
 
 After the preprocessing of sentences and getting reduced sentences the input data is to be converted in a bag of words and to be tokenized to matrix unique numbers where each number represents a unique word in the bag of words. This is done using Tokenizer() function included in tensorflow
 Since the structure of sentences that is arrangements of words in the sentence will matter significantly in determining the correct output, hence  deep learning involving RNN (LSTM) and ANN using tensorflow backend is used. 
